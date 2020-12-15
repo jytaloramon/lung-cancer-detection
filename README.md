@@ -35,6 +35,46 @@ O câncer de pulmão é o tipo de câncer que mais causa mortes no mundo e sua p
   </br>
   <i>Processo de Segmentação: (1) imagem de entrada, (2) imagem com filtro Gaussiano, (3) máscara gerada, (4) extração.</i>
 </p>
+ 
+Para  constatação  da  validade  do  método  foram  utilizadas  apenas  imagens pulmonares que continuam nódulos, além de serem checados os resultados visualmente por um ser humano. As imagens foram classificadas em 3 tipo: (Excelente) regiões extraídas perfeitamente, (Ruim) imagens com problema que impossibilitam a utilização e (Aceitável) imagens que apresentam problemas na segmentacão porém não afetam regiões com nódulo.
 
-```Os teste foram feitos com 894 imagens, onde apenas 16 apresentaram problemas na segmentação. Dessas 16 imagens apenas 11 delas apresentou interferência na região do nódulo.``` 
+```Os teste foram feitos com 1112 imagens, onde apenas 22 apresentaram problemas na segmentação. Dessas 22 imagens apenas 17 delas apresentou interferência na região do nódulo.```
 
+<br>
+
+<table align="center">
+  <thead>
+    <tr>
+      <td>Classificação</td>
+      <td>Quantidade</td>
+      <td>Porcentagem (%)</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Excelente</td>
+      <td>1090</td>
+      <td>98.02%</td>
+    </tr>
+    <tr>
+      <td>Aceitável</td>
+      <td>5</td>
+      <td>0.46%</td>
+    </tr>
+    <tr>
+      <td>Ruim</td>
+      <td>17</td>
+      <td>1.52%</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>1112</td>
+      <td>100%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <i>Tabela de resultados.</i>
+</p>
